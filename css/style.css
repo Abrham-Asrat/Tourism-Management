@@ -1,0 +1,1935 @@
+/* 
+********************
+external font 
+********************
+*/
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Noto+Sans:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+
+/* 
+********************
+Variable (common styles)
+********************
+*/
+:root {
+  --cl-primary: #678e3e;
+  --clr-primary-light: #beed8c;
+  --clr-grey-1: #3f72a1;
+  --clr-grey-5: #671d98;
+  --clr-grey-10: #f1f5f8;
+  --black--color: #000;
+  --white: #fff;
+  --navText-color: #513c06;
+  --navBackground-color: #e9b949;
+  --nav--padding: 6px 12px;
+  --border-radius: 0.5rem;
+  --light-black: #617d98;
+
+  ---heading-fontFamily: "Roboto", sans-serif;
+  --paragraph-fontFamily: "Noto sans", sans-serif;
+  --nav-fontFamily: "open sans", sans-serif;
+  --spacing: 0.25rem;
+  --light-shadow: rgba(0, 0, 0, 0.1);
+  --dark-shadow: rgba(0, 0, 0, 0.22);
+  --hover-color: hsl(43, 61%, 16%);
+  --hoverBackgorund-color: hsl(43, 90%, 88%);
+  --fontSize: 0.875rem;
+  --common-color: hsl(209, 79%, 55%);
+  --backgorund-color: hsl(45, 100%, 95%);
+ 
+
+  --transition: all 0.3s linear;
+  ---logo-boxShadow: 0 0 5px rgba(0, 0, 0, 0.32);
+}
+
+/* 
+********************
+Global styles
+********************
+*/
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+Body {
+  color: var(--common-color);
+  background-color: var(--backgorund-color);
+  font-family: var(--nav-fontFamily);
+  line-height: 1.6;
+  font-size: var(--fontSize);
+}
+h1,
+h2,
+h3 {
+  font-family: var(---heading-fontFamily);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--black--color);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+p {
+  color: var(--light-black);
+  font-family: var(--paragraph-fontFamily);
+  margin-bottom: 1.25rem;
+  line-height: 2;
+  font-weight: 300;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+/* global class */
+.btn {
+  display: inline-block;
+  color: var(--navText-color);
+  background-color: var(--navBackground-color);
+  letter-spacing: var(--spacing);
+  padding: 0.375rem 0.875rem;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 1px 3px var(--dark-shadow);
+  transition: var(--transition);
+  --webkit-transition: var(--transition);
+}
+.btn:hover {
+  color: var(--hover-color);
+  background-color: var(--hoverBackgorund-color);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.section {
+ padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width:992px) {
+  .section-center{
+    width: 95vw;
+  }
+  
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* underline */
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--navBackground-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.global-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 3rem;
+  width: 20rem;
+  justify-items: center;
+}
+.social-icon {
+  color: #000;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--navBackground-color);
+}
+
+/* 
+********************
+Nav Bar
+********************
+*/
+.nav-fixed {
+  height: 5rem;
+   background-color: hsl(46, 54%, 86%);
+  width: 100%;
+  display: grid;
+align-items: center;
+padding-left: 2rem;
+padding-right: 2rem;
+  transition: var(--transition);
+}
+.nav-center {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+   
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+ 
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+.logo-text {
+  font-family: "Grand Hotel", cursive;
+  color: var(--light-black);
+}
+.logo-text1 {
+  margin-top: -1.5rem;
+  font-weight: 600;
+  color: rgb(20, 19, 33);
+  font-size: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-btn {
+  color: #c31d1d;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 2.5rem;
+  cursor: pointer;
+  justify-self: end;
+}
+.nav-btn:hover {
+  color: #c83838c4;
+}
+.nav-btn:active {
+  transform: scale(0.9);
+}
+.links {
+  display: none;
+}
+
+.icon-nav {
+  display: none;
+}
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow:var(---logo-boxShadow);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+  transition: var(--transition);
+  box-shadow: 0 2px 5px var(--dark-shadow);
+  -webkit-transition: var(--transition);
+  /* add later */
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.show-sidebar {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  height: 22rem;
+  width: 17rem;
+  margin-top: 5rem;
+}
+
+.sidebar-links {
+  display: grid;
+  row-gap: 0.67rem;
+  margin-top: 1rem;
+}
+.sidebar-link {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  display: block;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+.side-media {
+  margin: 1rem 0.53rem;
+}
+.side-media a {
+  font-size: 1.3rem;
+}
+.sidebar-link:hover {
+  background-color: #2caeba;
+  transform: translateX(4px);
+  padding-left: 2.35rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .nav-link {
+    color: var(--black--color);
+    letter-spacing: var(--spacing);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+  }
+  .logo {
+    margin-left: 2rem;
+  }
+  .nav-link:hover {
+    color: var(--navBackground-color);
+  }
+  .icon-nav {
+    display: flex;
+    column-gap: 1.4rem;
+    margin-top: 0;
+    margin-right: -1rem;
+  }
+  .social-icon {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+}
+/* 
+********************
+Book page
+********************
+ */
+ .book{
+  background: url(../images/Afar/Ertale/ertale2.jpeg) center/cover no-repeat fixed;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0% 90%,
+    0% 100%
+  );
+  clip-path: polygon(49% 0, 100% 3%, 100% 94%, 50% 100%, 0 94%, 0 4%);
+ }
+.booK-center{
+   height: 85%;
+    width: 80%;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+   background-color:var(--clr-grey-1); 
+    border-radius:1rem;
+}
+.back{
+  color: #ff0;
+  border: 2px solid #f00;
+  position:absolute;
+  top: 0;
+  right: 0;
+  padding: 0.35rem 1.2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+transition: var(--transition); 
+margin: 2rem;
+}
+.back:hover{
+  background-color:#F00;
+  border: 2px solid transparent;
+}
+.book-title h1{
+  color: var(--clr-primary-light);
+  font-size: 2rem; 
+}
+.book-title{
+  align-self:center;
+}
+.book-title .underline {
+  width: 7rem;
+}
+
+.form-section{
+  display:grid;  
+  row-gap: 1rem;
+  margin: 0 1.4rem;
+}
+
+.form-section div{
+   display:grid;
+  grid-template-columns:40% 60%;
+  color:var(--white);
+  font-weight: 900;
+}
+.form-section div .inputs{
+  border: 3px solid var(--clr-grey-5);
+  height: 1.6rem;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow:var(---logo-boxShadow);
+}
+
+.boookers .clearbtns{
+  justify-self: center;
+  
+}
+.boookers .submitbtns{
+   justify-self: center;
+
+}
+.clearbtns:hover, .submitbtns:hover {
+   background-color: var(--clr-grey-5);
+    color: var(--white);
+    border: 3px solid transparent;
+}
+
+@media screen and (min-width:960px) {
+  .booK-center{
+    width: 50%;
+  }
+  .form-section{
+    grid-template-columns: 1fr 1fr;
+     column-gap: 2rem;
+  }
+  .form-section div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+   
+  }
+  .form-section div .inputs{
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+  .boookers{
+    row-gap: 1rem; 
+    margin-top: 2rem;
+  }
+  .clearbtns{
+   float: left;
+   float: right;
+   width: 50%;
+   color:#fff;
+  border: 2px solid #f00;
+  background-color: transparent;
+  padding: 0.35rem 1.2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+transition: var(--transition);
+}
+.boookers .submitbtns{  
+ margin: 0 3rem;
+}
+}
+
+/* 
+********************
+Home page
+********************
+*/
+.homeSection{
+    background-color: hsl(46, 54%, 86%);
+   
+}
+.home-section {
+   min-height: calc(100vh - 5rem );
+   
+  z-index: -5;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0% 90%,
+    0% 10%
+  );
+  clip-path: polygon(49% 0, 100% 3%, 100% 94%, 50% 100%, 0 94%, 0 4%);
+}
+.home-center {
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  padding: 5rem;
+  position: relative;
+  width: 100%;
+ padding-top: 10rem;
+}
+.home-title1 {
+  color: var(--white);
+  font-weight: 900;
+  letter-spacing: 0.34rem;
+  text-transform: uppercase;
+  transition: var(--transition);
+  animation: slide-left 5s ease-in-out 1;
+  font-size: 5.5 rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home-title2 {
+  color: #f00;
+  font-weight: 900;
+  font-size: 6.3rem;
+  letter-spacing: 0.34rem;
+  text-transform: uppercase;
+  transition: var(--transition);
+  animation: slide-right 5s ease-in-out 1;
+  position: relative;
+}
+
+.home-center p {
+  color: rgba(210, 138, 138, 0.661);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.home-btn {
+  padding: 0.75rem;
+  outline: 4px solid var(--navBackground-color);
+  outline-offset: 0.25rem;
+  color: var(--white);
+  border-radius: var(--border-radius);
+  animation: btn-show 5s linear 1;
+}
+.home-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.home-section::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.155));
+}
+/* animation */
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  30% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+}
+
+@keyframes btn-show {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.28);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 
+**********************
+Welcome page
+********************** */
+
+.welcome-center {
+  display: grid;
+  justify-items: center;
+
+
+}
+.welcome-img,
+.welcome-info {
+  padding: 2rem 0;
+}
+.welcome-img-cont {
+  border: 0.25rem solid transparent;
+  border-radius:1rem;
+  overflow: hidden;
+}
+
+.welcome-info {
+  background-color: var(--clr-primary-light);
+  border-radius:1rem;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    60% 75%,
+    0% 75%
+  );
+  height: 34rem;
+  /* width: 35rem; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.welcome-text h1 {
+  color: var(--clr-grey-5);
+  font-size: 3rem;
+}
+.welcome-text h2 {
+  font-family: "Grand Hotel", sans-serif;
+  font-size: 3rem;
+  color: #f00;
+}
+.welcomeinfo {
+  color: #000000;
+  font-size: 0.87rem;
+  padding: 0 1rem;
+  font-weight: bolder;
+}
+.welcome-picture {
+  transition: var(--transition);
+  height: 20rem;
+}
+.welcome-img-cont:hover .welcome-picture {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.welcome-text {
+  width: 26rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 992px) {
+  .welcome-center {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    max-width: 1100px;
+  }
+}
+/* 
+********************
+packages
+********************
+*/
+.package-section {
+  min-height: 100vh;
+  background-color: #f1f5f8;
+}
+.package-center {
+  display: grid;
+  padding: 7rem 0;
+  width: 90vw;
+  max-width: 1400px;
+ padding:0 2rem;
+}
+.card-title {
+  justify-self: center;
+  padding-bottom: 5rem;
+}
+.package-card {
+  display: grid;
+  /* column-gap: 1rem; */
+  row-gap: 3rem;
+ 
+}
+.single-card {
+  border-radius: var(--border-radius);
+  position: relative;
+  transition: all 1s linear;
+  height: 30rem;
+  max-width: 25rem;
+  perspective: 1500px;
+}
+.cardSide {
+  transition: all 2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.32);
+}
+.card-back {
+  transform: rotateY(-180deg);
+  display: grid;
+  place-items: center;
+  background-color: #fffaeb;
+}
+.card-front {
+  background-color: var(--hoverBackgorund-color);
+}
+.single-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+.single-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+.imageCard {
+  height: 14.5rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.CardInfo {
+  display: grid;
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.card-info {
+  color: var(--black--color);
+  font-family: var(---heading-fontFamily);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.cardTitile {
+  color: var(--cl-primary);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.card-change {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.2rem;
+}
+.card-change h2 {
+  font-size: 1rem;
+  color: red;
+}
+.fa-location-dot {
+  color: rgb(16, 16, 171);
+  font-size: 2rem;
+  padding: 1rem 1.4rem;
+  background-color: var(--hoverBackgorund-color);
+  border-radius: 50%;
+}
+.icon-card {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.package-card {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+/* 
+********************
+About us 
+********************
+*/
+/* 
+   *******************
+   contact 
+   *******************
+    */
+
+.contact {
+  background-color: var(--common-color);
+  height: 35vh;
+  width: 100%;
+}
+  .contact-center{
+    margin-top: -2rem;
+  }
+
+.contact-title h3 {
+  color: var(--white);
+}
+.contact-title p {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.contact-form {
+  display: flex;
+  max-width: 28rem;
+}
+
+.form-control {
+  flex: 1 1 auto;
+  color: var(--clr-grey-5);
+}
+
+.form-control,
+.btn-submit {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: var(--spacing);
+  background: var(--white);
+  text-transform: capitalize;
+  border: transparent;
+}
+
+.form-control::placeholder {
+  color: inherit;
+}
+.btn-submit {
+  margin-left: 0.5rem;
+  background-color: var(--navBackground-color);
+  color: var(--navText-color);
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+  height: 25vh;
+}
+  .contact-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      margin-top:0;
+  }
+  .contact-title {
+    margin-top: -3%;
+  }
+  .contact-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-left: 2rem;
+  }
+}
+
+/* 
+********************
+Gallery
+*******************
+ */
+.gallery-img-container {
+  position: relative;
+  background-color: var(--cl--primary-5);
+
+  background-color: red;
+  /* width: 27rem; */
+  /* height: 20rem; */
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width: 760px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 33.33%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+/* 
+********************
+Footer
+********************
+*/
+.footer{
+  height: 35vh;
+  background:#102a42;
+}
+.footer-center{
+  display: grid;
+  justify-items: center;
+   padding-top: 3rem;
+   row-gap: 1rem;
+}
+.footer-link{
+  display: flex;
+  column-gap: 1.3rem;
+
+}
+
+.nav-links{
+  color:var(--white);
+  text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+.nav-links:hover{
+color: var(--navBackground-color);
+}
+.footer-icons{
+  display: flex;
+  column-gap: 2rem;
+
+}
+
+.social-icons{
+  color:var(--cl-primary);
+  text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+.social-icons:hover{
+color: var(--navBackground-color);
+}
+
+.footer-info{
+  display: flex;
+}
+
+.footer-info h2{
+  color: var(--white);
+  font-size: 1rem;
+}
+
+/* 
+*******************
+Single package
+*******************
+ */
+ .sub-container{
+  background:url('../images/Afar/Ertale/ertale3.jpeg') center/cover no-repeat fixed;
+   
+ }
+.sub-center{
+  display: grid;
+  min-height: 100vh;
+  padding-top: 5rem;
+  row-gap: 3rem;
+    clear: both;
+
+}
+.discrption-container{
+  display: grid;
+  /* align-items: center; */
+  border-radius: 1rem;
+  box-shadow:2px 3px 15px ;
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(224, 0, 0, 0.116));
+  overflow: hidden;
+  height: 100%;
+}
+.discrption{
+  color: var(--white);
+    font-size: 1.3rem;
+      font-weight: 900;
+        margin: 0 2rem;
+}
+.h3Packeg{
+  text-align: center;
+  color:#f00;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  font-weight:900;
+  box-shadow: var(---logo-boxShadow);
+   box-shadow:2px 3px 15px var(--dark-shadow) ;
+}
+.Ppackeg{
+  color:var(--white);
+
+  font-size: 1.3rem;
+
+  box-shadow: var(---logo-boxShadow);
+}
+
+.each-package{
+  display:flex;
+  flex-direction: column;
+  width: 85%;
+  /* min-height:20rem; */
+  height:40rem;
+  border-radius:1rem;
+  margin:0% 3% 2% 3%;
+  justify-items: center;
+  row-gap: 2rem;;
+}
+@media screen and (min-width:960px) {
+  .each-package{
+  flex-direction:row;
+  width: 85%;
+  min-height:20rem;
+  max-height:20rem;
+
+  column-gap: 2rem;
+}
+}
+.img-container{
+   min-width:20rem;
+   height: 100%;
+   overflow: hidden;
+  border: 0.25rem solid transparent;
+  border-radius: 1rem;
+}
+@media screen and (min-width:960px) {
+  .img-container{
+   min-width:30rem;
+}
+}
+.sub-img{
+  transition:var(--transition);
+  height: 100%;
+  box-shadow: var(---logo-boxShadow);
+  }
+.sub-img:hover{
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+
+/* *************************
+   Afar packages
+   *************************
+   
+*/
+/* image of cultural home */
+.img1{
+  background:url('../images/Afar/Cultral/home1.jpeg') center/cover no-repeat;
+    animation: img1 13s linear infinite;
+}
+@keyframes img1{
+  0% {
+    background-image: url("../images/Afar/Cultral/home2.jpeg");
+  }
+  25% {
+    background-image: url("../images/Afar/Cultral/home3.jpeg");
+  }
+  50% {
+    background-image: url("../images/Afar/Cultral/home4.jpeg");
+  }
+  70% {
+    background-image: url("../images/Afar/Cultral/home5.jpeg");
+  }
+  70% {
+    background-image: url("../images/Afar/Cultral/home1.jpeg");
+  }
+}
+/* endo of cultural home */
+/* image of denakil deperastion */
+.img2{
+  background:url('../images/Afar/DenakilDepression/depression1.jpeg') center/cover no-repeat;
+    animation: img2 13s linear infinite;
+}
+@keyframes img2{
+  0% {
+    background:url('../images/Afar/DenakilDepression/depression1.jpeg') center/cover no-repeat;
+  }
+  25% {
+   background:url('../images/Afar/DenakilDepression/depression2.jpeg') center/cover no-repeat;
+  }
+  50% {
+     background:url('../images/Afar/DenakilDepression/depression3.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Afar/DenakilDepression/depression4.jpeg') center/cover no-repeat;
+  }
+  100% {
+     background:url('../images/Afar/DenakilDepression/depression5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of denakil deperstion */
+
+/* image of denakil deperastion */
+.img3{
+  background:url('../images/Afar/Dinknesh/dinknesh1.jpeg') center/cover no-repeat;
+    animation: img3 13s linear infinite;
+}
+@keyframes img3{
+  0% {
+    background:url('../images/Afar/Dinknesh/dinknesh1.jpeg') center/cover no-repeat;
+  }
+  25% {
+  background:url('../images/Afar/Dinknesh/dinknesh2.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Afar/Dinknesh/dinknesh3.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Afar/Dinknesh/dinknesh4.jpeg') center/cover no-repeat;
+  }
+  100% {
+    background:url('../images/Afar/Dinknesh/dinknesh5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of denakil deperstion */
+/* image of denakil deperastion */
+.img4{
+  background:url('../images/Afar/Salt/minig1.jpeg') center/cover no-repeat;
+    animation: img4 13s linear infinite;
+}
+@keyframes img4{
+  0% {
+   background:url('../images/Afar/Salt/minig2.jpeg') center/cover no-repeat;
+
+  }
+  25% {
+  background:url('../images/Afar/Salt/minig3.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Afar/Salt/minig4.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Afar/Salt/minig5.jpeg') center/cover no-repeat;
+  }
+  80% {
+    background:url('../images/Afar/Salt/minig6.jpg') center/cover no-repeat;
+  }
+  100% {
+    background:url('../images/Afar/Salt/minig7.jpg') center/cover no-repeat;
+  }
+}
+
+/* endo of denakil deperstion */
+/* image of denakil deperastion */
+.img5{
+  background:url('../images/Afar/Ertale/ertale1.jpeg') center/cover no-repeat;
+    animation: img5 13s linear infinite;
+}
+@keyframes img5{
+  0% {
+     background:url('../images/Afar/Ertale/ertale1.jpeg') center/cover no-repeat;
+  }
+  25% {
+   background:url('../images/Afar/Ertale/ertale3.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Afar/Ertale/ertale4.jpeg') center/cover no-repeat;
+  }
+  70% {
+      background:url('../images/Afar/Ertale/ertale5.jpeg') center/cover no-repeat;
+  }
+  100% {
+    background:url('../images/Afar/Ertale/ertalw2.jpeg') center/cover no-repeat;
+}
+/* endo of denakil deperstion */
+
+}
+.lang{
+  float:right;
+  width: 10%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+    margin: 6rem 2rem;
+}
+.btuContaier{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.singleBook{
+  border: 3px solid #f00;
+  color: #F00;
+  font-weight: 900;
+  transition: var(--transition);
+  cursor: pointer;
+  padding: 0.75rem 0.85rem;
+  margin: 2rem 0;
+  position: fixed;
+  bottom: 0;
+}
+.singleBook:hover{
+  background-color:var(--navBackground-color);
+  border: 3px solid transparent;
+    color:var(--black--color);
+}
+.singleBook:active{
+   transform: scale(0.9);
+}
+
+
+/* 
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+    Arbaimnch sub packages
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+ */
+ 
+ .sub-container1{
+   background:url('../images/Arbaminch/Dorze/dorze.jpeg') center/cover no-repeat fixed;
+   
+  }
+  
+  /* image of dorze*/
+  .amuImg1{
+  background:url('../images/Arbaminch/Dorze/dorze.jpeg') center/cover no-repeat;
+    animation: amuImg1 13s linear infinite;
+}
+@keyframes amuImg1{
+  0% {
+    background:url('../images/Arbaminch/Dorze/dorze1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+    background:url('../images/Arbaminch/Dorze/dorze2.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Arbaminch/Dorze/dorze3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Arbaminch/Dorze/dorze.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+    background:url('../images/Arbaminch/Dorze/images.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of dorze */
+ /* image of lakes */
+ .amuImg2{
+  background:url('../images/Arbaminch/Chamo/Abay1.jpeg') center/cover no-repeat;
+    animation: amuImg2 13s linear infinite;
+}
+@keyframes amuImg2{
+  0% {
+    background:url('../images/Arbaminch/Chamo/Abay4.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+  background:url('../images/Arbaminch/Chamo/Abaya2.jpeg') center/cover no-repeat;
+}
+50% {
+     background:url('../images/Arbaminch/Chamo/Abaya3.jpeg') center/cover no-repeat;
+  }
+  70% {
+   background:url('../images/Arbaminch/Chamo/Abaya5.jpg') center/cover no-repeat;
+  }
+ 
+  100% {
+    background:url('../images/Arbaminch/Chamo/Abya5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of lakes */
+ /* image of cultural music */
+ .amuImg3{
+   background:url('../images/Arbaminch/cultural/image4.jpeg') center/cover no-repeat;
+    animation: amuImg3 13s linear infinite;
+  }
+@keyframes amuImg3{
+  0% {
+    background:url('../images/Arbaminch/cultural/image4.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+  background:url('../images/Arbaminch/cultural/music1.jpeg') center/cover no-repeat;
+}
+  50% {
+    background:url('../images/Arbaminch/cultural/music2.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Arbaminch/cultural/music3.jpeg') center/cover no-repeat;
+  }
+  
+  100% {
+    background:url('../images/Arbaminch/cultural/music5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of cultural music*/
+/* image of minch*/
+.amuImg4{
+  background:url('../images/Arbaminch/minch/minch1.jpeg') center/cover no-repeat;
+  animation: amuImg4 13s linear infinite;
+}
+@keyframes amuImg4{
+  0% {
+     background:url('../images/Arbaminch/minch/minch1.jpeg') center/cover no-repeat;
+     
+    }
+  25% {
+  background:url('../images/Arbaminch/minch/minch2.jpeg') center/cover no-repeat;
+  }
+  50% {
+     background:url('../images/Arbaminch/minch/minch3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Arbaminch/minch/minch1.jpeg') center/cover no-repeat;
+  }
+  
+  100% {
+    background:url('../images/Arbaminch/minch/minch4.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of lakes */
+/* image of nechasar */
+.amuImg5{
+background:url('../images/Arbaminch/Nechasar/Nechsar1.jpeg') center/cover no-repeat;
+
+    animation: amuImg5 13s linear infinite;
+  }
+@keyframes amuImg5{
+  0% {
+    background:url('../images/Arbaminch/Nechasar/Nechsar1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+background:url('../images/Arbaminch/Nechasar/nechsar2.jpeg') center/cover no-repeat;
+}
+50% {
+     background:url('../images/Arbaminch/Nechasar/Nechsar3.jpeg') center/cover no-repeat;
+
+  }
+  70% {
+  background:url('../images/Arbaminch/Nechasar/Nechsar4.jpeg') center/cover no-repeat;
+
+}
+
+100% {
+  background:url('../images/Arbaminch/Nechasar/Nechsar5.jpeg') center/cover no-repeat;
+
+  }
+}
+
+/* endo of nechsar */
+ /* image of lakes */
+ .amuImg6{
+   background:url('../images/Arbaminch/Omo/hammer0.jpeg') center/cover no-repeat;
+   animation: amuImg6 13s linear infinite;
+}
+@keyframes amuImg6{
+  0% {
+    background:url('../images/Arbaminch/Omo/hammer0.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+    background:url('../images/Arbaminch/Omo/hammer1.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Arbaminch/Omo/hammer2.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Arbaminch/Omo/hammer3.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+   background:url('../images/Arbaminch/Omo/hammer4.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of lakes */
+
+
+
+
+
+/* 
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+   Gonder sub packages
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+*/
+ .sub-container2{
+   background:url('../images/Gonder/SkelaAbay/sekala4.jpeg') center/cover no-repeat fixed;
+   
+  }
+  /* image of music */
+  .gonderImg1{
+   background:url('../images/Gonder/CulturalMusic/cultral4.jpeg') center/cover no-repeat;
+   animation: gonderImg1 13s linear infinite;
+}
+@keyframes gonderImg1{
+  0% {
+    background:url('../images/Gonder/CulturalMusic/cultral4.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+     background:url('../images/Gonder/CulturalMusic/cultural1.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Gonder/CulturalMusic/cultural2.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Gonder/CulturalMusic/cultural3.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+  background:url('../images/Gonder/CulturalMusic/cultural5.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+ /* image of music */
+ .gonderImg2{
+
+   background:url('../images/Gonder/GonderCastle/gonderEthiopia.jpeg') center/cover no-repeat;
+   animation: gonderImg2 13s linear infinite;
+}
+@keyframes gonderImg2{
+  0% {
+     background:url('../images/Gonder/GonderCastle/palace1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+      background:url('../images/Gonder/GonderCastle/palace2.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Gonder/GonderCastle/palace3.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Gonder/GonderCastle/palace4.jpeg') center/cover no-repeat;
+  }
+ 
+  80% {
+  background:url('../images/Gonder/GonderCastle/palace5.jpeg') center/cover no-repeat;
+  }
+  90% {
+  background:url('../images/Gonder/GonderCastle/palace6.jpeg') center/cover no-repeat;
+  }
+  100% {
+    background:url('../images/Gonder/GonderCastle/palace7.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+ /* image of music */
+ .gonderImg4{
+   background:url('../images/Gonder/SkelaAbay/sekala4.jpeg') center/cover no-repeat;
+   animation: gonderImg4 13s linear infinite;
+  }
+  @keyframes gonderImg4{
+    0% {
+   background:url('../images/Gonder/SkelaAbay/sekala4.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+     background:url('../images/Gonder/SkelaAbay/sekela1.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Gonder/SkelaAbay/sekela2.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Gonder/SkelaAbay/sekela3.jpeg') center/cover no-repeat;
+  }
+ 
+  90% {
+  background:url('../images/Gonder/SkelaAbay/sekela5.jpeg') center/cover no-repeat;
+  }
+  100% {
+  background:url('../images/Gonder/SkelaAbay/sekela6.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+ /* image of music */
+ .gonderImg3{
+   background:url('../images/Gonder/SemenMountain/semen1.jpeg') center/cover no-repeat;
+   animation: gonderImg3 13s linear infinite;
+}
+@keyframes gonderImg3{
+  0% {
+   background:url('../images/Gonder/SemenMountain/semen1.jpeg') center/cover no-repeat;
+  }
+  25% {
+     background:url('../images/Gonder/SemenMountain/semen2.jpeg') center/cover no-repeat;
+  }
+  50% {
+    background:url('../images/Gonder/SemenMountain/semen3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Gonder/SemenMountain/semen4.jpeg') center/cover no-repeat;
+  }
+ 
+  90% {
+ background:url('../images/Gonder/SemenMountain/semen5.jpeg') center/cover no-repeat;
+}
+  100% {
+ background:url('../images/Gonder/SemenMountain/semen6.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+
+
+ .sub-container7{
+   background:url('../images/Wolo/Lalibela/lalibela2.jpeg') center/cover no-repeat fixed;
+   
+  }
+
+/* image of music */
+.wolloimg1{
+   background:url('../images/Wolo/Lalibela/lalibela1.jpeg') center/cover no-repeat;
+   animation: wolloimg1 13s linear infinite;
+}
+@keyframes wolloimg1{
+  0% {
+   background:url('../images/Wolo/Lalibela/lalibela1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+    background:url('../images/Wolo/Lalibela/lalibela2.jpeg') center/cover no-repeat;
+  }
+  50% {
+     background:url('../images/Wolo/Lalibela/lalibela3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Wolo/Lalibela/lalibela4.jpeg') center/cover no-repeat;
+  }
+  80% {
+    background:url('../images/Wolo/Lalibela/lalibela7.jpeg') center/cover no-repeat;
+  }
+  
+  90% {
+   background:url('../images/Wolo/Lalibela/lalibela5.jpeg') center/cover no-repeat;
+  }
+  100% {
+  background:url('../images/Wolo/Lalibela/lalibela6.jpeg') center/cover no-repeat;
+}
+}
+
+/* endo of music */
+/* image of music */
+ .wolloimg2{
+   background:url('../images/Wolo/Gishen/geshen4.jpeg') center/cover no-repeat;
+   animation: wolloimg2 13s linear infinite;
+}
+@keyframes wolloimg2{
+  0% {
+  background:url('../images/Wolo/Gishen/geshen4.jpeg') center/cover no-repeat
+  
+  }
+  25% {
+    background:url('../images/Wolo/Gishen/gishen1.jpeg') center/cover no-repeat
+  }
+  50% {
+     background:url('../images/Wolo/Gishen/gishen2.jpeg') center/cover no-repeat
+  }
+  70% {
+     background:url('../images/Wolo/Gishen/gishen3.jpeg') center/cover no-repeat
+  }
+ 
+  90% {
+   background:url('../images/Wolo/Gishen/gishen1.jpeg') center/cover no-repeat
+  }
+  100% {
+    background:url('../images/Wolo/Gishen/gishen5.jpeg') center/cover no-repeat
+  }
+}
+
+/* endo of music */
+/* 
+🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑
+Bonga package
+🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑🚑
+*/
+
+
+.sub-container4{
+  background: url('../images/Bonga/Makira/makira3.jpeg') center/cover no-repeat fixed;
+}
+/* image of music */
+.bonimg1{
+   background:url('../images/Bonga/Abajiffar/abajifar1.jpeg') center/cover no-repeat;
+   animation:bonimg1 13s linear infinite;
+}
+@keyframes bonimg1{
+  0% {
+   background:url('../images/Bonga/Abajiffar/abajifar1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+    background:url('../images/Bonga/Abajiffar/abajifar2.jpeg') center/cover no-repeat;
+  }
+  50% {
+       background:url('../images/Bonga/Abajiffar/abajifar3.jpeg') center/cover no-repeat;
+  }
+  70% {
+       background:url('../images/Bonga/Abajiffar/abajifar4.jpeg') center/cover no-repeat;
+  }
+ 
+  90% {
+    background:url('../images/Bonga/Abajiffar/abajifar3.jpeg') center/cover no-repeat;
+  }
+  100% {
+     background:url('../images/Bonga/Abajiffar/abajifar4.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+/* image of music */
+ .bonimg2{
+   background:url('../images/Bonga/bongaBarta/river1.jpeg') center/cover no-repeat;
+   animation:bonimg2 13s linear infinite;
+  }
+@keyframes bonimg2{
+  0% {
+   background:url('../images/Bonga/bongaBarta/river1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+    background:url('../images/Bonga/bongaBarta/river2.jpeg') center/cover no-repeat;
+  }
+  50% {
+       background:url('../images/Bonga/bongaBarta/river3.jpeg') center/cover no-repeat;
+  }
+  70% {
+       background:url('../images/Bonga/bongaBarta/river4.jpeg') center/cover no-repeat;
+  }
+  
+  80% {
+       background:url('../images/Bonga/bongaBarta/river7.jpeg') center/cover no-repeat;
+  }
+ 
+  90% {
+     background:url('../images/Bonga/bongaBarta/river5.jpeg') center/cover no-repeat;
+    }
+  100% {
+    background:url('../images/Bonga/bongaBarta/river6.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+/* image of music */
+ .bonimg3{
+   background:url('../images/Bonga/Denbi/denbi1.jpeg') center/cover no-repeat;
+   animation:bonimg3 13s linear infinite;
+  }
+@keyframes bonimg3{
+  0% {
+   background:url('../images/Bonga/Denbi/denbi1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+     background:url('../images/Bonga/Denbi/denbi2.jpeg') center/cover no-repeat;
+  }
+  50% {
+       background:url('../images/Bonga/Denbi/denbi3.jpeg') center/cover no-repeat;
+  }
+  70% {
+       background:url('../images/Bonga/Denbi/denbi4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+   background:url('../images/Bonga/Denbi/denbi5.jpeg') center/cover no-repeat;
+}
+}
+
+/* endo of music */
+/* image of music */
+.bonimg4{
+   background:url('../images/Bonga/Makira/makira1.jpeg') center/cover no-repeat;
+   animation:bonimg4 13s linear infinite;
+  }
+@keyframes bonimg4{
+  0% {
+ background:url('../images/Bonga/Makira/makira1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+      background:url('../images/Bonga/Makira/makira2.jpeg') center/cover no-repeat;
+    }
+    50% {
+       background:url('../images/Bonga/Makira/makira3.jpeg') center/cover no-repeat;
+  }
+  70% {
+        background:url('../images/Bonga/Makira/makira4.jpeg') center/cover no-repeat;
+  }
+ 
+  90% {
+     background:url('../images/Bonga/Makira/makira5.jpeg') center/cover no-repeat;
+  }
+  100% {
+      background:url('../images/Bonga/Makira/makira6.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+/* image of music */
+ .bonimg5{
+   background:url('../images/Bonga/Wushwush/wushwush1.jpeg') center/cover no-repeat;
+   animation:bonimg5 13s linear infinite;
+}
+@keyframes bonimg5{
+  0% {
+   background:url('../images/Bonga/Wushwush/wushwush1.jpeg') center/cover no-repeat;
+    
+  }
+  25% {
+     background:url('../images/Bonga/Wushwush/wushwush2.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Bonga/Wushwush/wushwush3.jpeg') center/cover no-repeat;
+  }
+  70% {
+       background:url('../images/Bonga/Wushwush/wushwush4.jpeg') center/cover no-repeat;
+      }
+ 
+  100% {
+     background:url('../images/Bonga/Wushwush/wushwush5.jpeg') center/cover no-repeat;
+  }
+}
+
+/* endo of music */
+/* image of music */
+.bonimg6{
+   background:url('../images/Bonga/Indestrial/park1.jpeg') center/cover no-repeat;
+   animation:bonimg6 13s linear infinite;
+}
+@keyframes bonimg6{
+  0% {
+   background:url('../images/Bonga/Indestrial/park1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+    background:url('../images/Bonga/Indestrial/park2.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Bonga/Indestrial/park3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Bonga/Indestrial/park4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+     background:url('../images/Bonga/Indestrial/park5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of music */
+
+/* 
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+Tigray packages
+🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗
+*/
+.sub-container5{
+       background:url('../images/Tigray/DebreDamo/damo5.jpeg') center/cover no-repeat fixed;
+       
+      }
+
+.tigrayimg1{
+   background:url('../images/Tigray/Aksum/aksum1.jpeg') center/cover no-repeat;
+   animation:tigrayimg1 13s linear infinite;
+}
+@keyframes tigrayimg1{
+  0% {
+   background:url('../images/Tigray/Aksum/aksum1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+  background:url('../images/Tigray/Aksum/aksum2.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Tigray/Aksum/aksum3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Tigray/Aksum/aksum4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+     background:url('../images/Tigray/Aksum/aksum5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of music */
+.tigrayimg2{
+    background:url('../images/Tigray/AksumTsion/tsion1.jpeg') center/cover no-repeat;
+   animation:tigrayimg2 13s linear infinite;
+}
+@keyframes tigrayimg2{
+  0% {
+    background:url('../images/Tigray/AksumTsion/tsion1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+  background:url('../images/Tigray/AksumTsion/tsion2.jpeg') center/cover no-repeat;
+  }
+  50% {
+       background:url('../images/Tigray/AksumTsion/tsion3.jpeg') center/cover no-repeat;
+  }
+  70% {
+     background:url('../images/Tigray/AksumTsion/tsion4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+      background:url('../images/Tigray/AksumTsion/tsion5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of music */
+.tigrayimg3{
+    background:url('../images/Tigray/AlnejashiMosque/alnejash1.jpeg') center/cover no-repeat;
+   animation:tigrayimg3 13s linear infinite;
+}
+@keyframes tigrayimg3{
+  0% {
+   background:url('../images/Tigray/AlnejashiMosque/alnejash1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+ background:url('../images/Tigray/AlnejashiMosque/alnejash2.jpeg') center/cover no-repeat;
+  }
+  50% {
+      background:url('../images/Tigray/AlnejashiMosque/alnejash3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Tigray/AlnejashiMosque/alnejash4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+      background:url('../images/Tigray/AlnejashiMosque/alnejash5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of music */
+.tigrayimg4{
+   background:url('../images/Tigray/DebreDamo/damo1.jpeg') center/cover no-repeat;
+   animation:tigrayimg4 13s linear infinite;
+}
+@keyframes tigrayimg4{
+  0% {
+  background:url('../images/Tigray/DebreDamo/damo1.jpeg') center/cover no-repeat;
+   
+  }
+  25% {
+   background:url('../images/Tigray/DebreDamo/damo2.jpeg') center/cover no-repeat;
+  }
+  50% {
+       background:url('../images/Tigray/DebreDamo/damo3.jpeg') center/cover no-repeat;
+  }
+  70% {
+    background:url('../images/Tigray/DebreDamo/damo4.jpeg') center/cover no-repeat;
+  }
+ 
+  100% {
+     background:url('../images/Tigray/DebreDamo/damo5.jpeg') center/cover no-repeat;
+  }
+}
+/* endo of music */
+.tigrayimg5{
+   background:url('../images/Tigray/Abuneyemata/Abuneyemata1.jpg') center/cover no-repeat;
+   animation:tigrayimg5 13s linear infinite;
+}
+@keyframes tigrayimg5{
+  0% {
+   background:url('../images/Tigray/Abuneyemata/abuneyemata2.JPG') center/cover no-repeat
+   
+  }
+  25% {
+    background:url('../images/Tigray/Abuneyemata/Abuneyemata1.jpg') center/cover no-repeat
+  }
+  50% {
+      background:url('../images/Tigray/Abuneyemata/abuneyemata3.jpg') center/cover no-repeat
+  }
+  70% {
+    background:url('../images/Tigray/Abuneyemata/abuneyemata4.jpg') center/cover no-repeat
+  }
+ 
+  100% {
+      background:url('../images/Tigray/Abuneyemata/abuneyemata5.jpg') center/cover no-repeat
+  }
+}
+/* endo of music */

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link for icons -->
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css" />
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--  favicon icon -->
+    <link
+      rel="shortcut icon"
+      href="./Favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Book</title>
+    <script>
+      const queryString= window.location.search;
+      const urlparme= new URLSearchParams(queryString);
+      const productt = urlparme.get('product');
+      console.log(productt);
+
+      const selectElement= document.getElementById("place");
+      if(selectElement){
+        for(let i=0; i < selectElement.options.length; i++){
+          const option = selectElement.options[i];
+          if(option.value.toLowerCase()=== productt.toLocaleLowerCase()){
+            option.selected= true;
+            break;
+          }
+
+        }
+      } else{
+        console.error("euhrweruqehlrjkjrjq hrlquneruql uy");
+      }
+    </script>
+  </head>
+  <body>
+
+ <!-- Book -->
+ <Section class="book">
+    <article class="booK-center hidden" id="hide">
+      <div class="book-title">
+        <h1>book your trip✈</h1>
+        <div class="underline bookline"></div>
+      </div>
+           <form action="book.php" method="POST" class="form-section" autocomplete="on">
+        <div>
+                <label for="Name">FulName:</label>
+              <input type="text" name="Name" id="name" required placeholder="enter your full name" class="inputs">
+
+        </div>
+        <div>
+            <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="enter your email" class="inputs">
+        </div>
+        <div>
+                    <label for="phone">Phone:</label>
+        <input type="tel"  id="phone" name="phone"  placeholder="enter your phone number"  class="inputs">
+        </div>
+       <div>
+            <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required placeholder="enter your address" class="inputs">
+       </div>
+       <div>
+            <label for="Place">Where to:</label>
+        <select name="place" id="place" class="inputs">
+          <option value="Arbaminch"> 
+            Arbaminch
+          </option>
+          <option value="GonderTana">GonderTana</option>
+          <option value="HararDire">HararDire</option>
+          <option value="jimmaBonga">jimmaBonga</option>
+          <option value="Afar">Afar</option>
+          <option value="Tigray">Tigray</option>
+          <option value="Wolo">Wolo</option>
+        </select>
+       </div>
+       <div>
+        
+        <label for="number">How many:</label>
+        <input type="number" name="number" id="number" placeholder="number of guests" class="inputs" required>
+       </div>
+         <div>
+         <label for="date">When You want visit:</label>
+         <input type="date" name="date" id="date" class="inputs" required>
+         </div>
+      
+         <div class="boookers">
+           <input type="submit" name="send" class="btn submitbtns" value="submit" >
+                    <input type="reset" class="btn clearbtns"  value="clear">
+         </div>
+     
+       </form>  
+         <a href="Home.html" class="back">Back</a>
+    </article>
+ </Section>
+ <!-- eno of Book -->
+ 
+    <!-- link for javaScript -->
+    <script src="./js/script.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
