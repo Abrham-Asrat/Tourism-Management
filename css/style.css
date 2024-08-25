@@ -705,7 +705,7 @@ packages
 .package-center {
   display: grid;
   padding: 7rem 0;
-  width: 100vw;
+  width: 90vw;
   max-width: 1400px;
  padding:0 2rem;
 }
