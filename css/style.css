@@ -425,7 +425,7 @@ margin: 2rem;
 
 @media screen and (min-width:960px) {
   .booK-center{
-    width: 50%;
+    width: 70%;
   }
   .form-section{
     grid-template-columns: 1fr 1fr;
