@@ -1,0 +1,83 @@
+/* 
+**********************
+Welcome page
+********************** */
+@import './base';
+.welcome-center {
+  display: grid;
+  justify-items: center;
+
+
+}
+.welcome-img,
+.welcome-info {
+  padding: 2rem 0;
+}
+.welcome-img-cont {
+  border: 0.25rem solid transparent;
+  border-radius:1rem;
+  overflow: hidden;
+}
+
+.welcome-info {
+  background-color: $primary-light;
+  border-radius:1rem;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    60% 75%,
+    0% 75%
+  );
+  height: 34rem;
+  /* width: 35rem; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.welcome-text h1 {
+  color: $clr-grey-5;
+  font-size: 3rem;
+}
+.welcome-text h2 {
+  font-family: "Grand Hotel", sans-serif;
+  font-size: 3rem;
+  color: $clr-red;
+}
+.welcomeinfo {
+  color:$black;
+  font-size: 0.87rem;
+  padding: 0 1rem;
+  font-weight: bolder;
+}
+.welcome-picture {
+  transition: $transition;
+  height: 20rem;
+}
+.welcome-img-cont:hover .welcome-picture {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.welcome-text {
+  width: 26rem;
+  color: $clr-grey-5;
+}
+@media screen and (min-width: 992px) {
+  .welcome-center {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    max-width: 1100px;
+  }
+}

@@ -1,4 +1,20 @@
+//💥importing my sass
+@import './book';
+@import './contact';
+@import './footer';
+@import './gallery';
+@import './Home';
+@import './navBar';
+@import './package';
+@import './subpackage';
+@import './welcome';
 
-
-//importing bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//💥importing bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$theme-colors-add: (
+  "common": #328fe7,
+  "commonBg": #efe6c8,
+);
+$theme-colors: map-merge($theme-colors-add, $theme-colors);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
