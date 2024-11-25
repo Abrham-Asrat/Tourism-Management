@@ -71,7 +71,7 @@
 }
 .card-info {
   color:  $black;
-  font-family:  $-heading-fontFamily;
+  font-family:  $heading-fontFamily;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.3;
@@ -149,7 +149,7 @@ Single package
   font-size: 2.5rem;
   padding: 1rem 0;
   font-weight:900;
-  box-shadow: $-logo-boxShadow;
+  box-shadow: $logo-boxShadow;
    box-shadow:2px 3px 15px $dark-shadow ;
 }
 .Ppackeg{
@@ -157,7 +157,7 @@ Single package
 
   font-size: 1.3rem;
 
-  box-shadow: $-logo-boxShadow;
+  box-shadow: $logo-boxShadow;
 }
 
 .each-package{
@@ -196,7 +196,7 @@ Single package
 .sub-img{
   transition:$transition;
   height: 100%;
-  box-shadow: $-logo-boxShadow;
+  box-shadow: $logo-boxShadow;
   }
 .sub-img:hover{
   opacity: 0.6;

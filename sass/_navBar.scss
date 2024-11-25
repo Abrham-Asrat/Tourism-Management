@@ -69,7 +69,7 @@ padding-right: 2rem;
   left: 0;
   width: 100%;
   z-index: 10;
-  box-shadow:$-logo-boxShadow;
+  box-shadow:$logo-boxShadow;
 }
 
 .sidebar {
@@ -139,7 +139,7 @@ padding-right: 2rem;
     justify-content: center;
   }
   .nav-link {
-    color: $black--color;
+    color: $black;
     letter-spacing: $spacing;
     font-weight: 700;
     font-size: 0.875rem;
