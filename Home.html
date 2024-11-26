@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- nav bar -->
-    <header class="header">
+    <header class="header sticky-top">
       <nav class="nav-fixed" id="navBtn">
         <div class="section-center nav-center">
           <div class="logo">
@@ -74,7 +74,7 @@
           <!-- end of icons -->
         </div>
       </nav>
-       <aside class="sidebar" id="sidebar">
+      <aside class="sidebar d-md-none" id="sidebar">
         <div>
           <ul class="sidebar-links me-5">
             <li>
@@ -105,6 +105,38 @@
       </aside>
     </header>
     <!-- End of navBar -->
+    <!-- Home Page -->
+    <!-- Home section -->
+    <section class="homeSection">
+      <article class="home-section">
+        <div
+          class="container-fluid home-center"
+        >
+          <div class="home-center">
+            <div class="home-text">
+              <h1 class="home-title1">Travel Around</h1>
+              <h1 class="home-title2">ኢትዮጵያ</h1>
+              <button type="button"  <a href="#gallery" class="btn home-btn">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <video
+          src="./video/banner1.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          class="video-container"
+          poster="./images/home/home4.jpg"
+        >
+          sorry browser doesn't support emedded vedios
+        </video>
+        <div class="overlays"></div>
+      </article>
+    </section>
+    <!--end of Home section -->
+
+    <!-- end of Home Page  -->
     <!-- link for javaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
