@@ -85,10 +85,10 @@ ul {
   justify-items:center;
 }
 .social-icon {
-  color: #000;
+  color: $light-black;
   font-size:1.3rem;
   transition: $transition;
   &:hover {
-    color: $navBackground-color;
+    color: $navBackground-color !important;
   }
 }
