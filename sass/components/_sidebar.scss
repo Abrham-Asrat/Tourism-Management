@@ -1,0 +1,41 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; // Hidden by default
+  width: 300px;
+  height: 100%;
+  background-color: $primary-color;
+  padding: $spacing;
+  transition: right 0.3s ease;
+  &:active {
+    right: 0;
+  }
+
+  .sidebar-links {
+    list-style: none;
+
+    .sidebar-link {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: $spacing 0;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .side-media {
+    margin-top: $spacing;
+
+    .social-icon {
+      color: white;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.Welcome {
+  .welcome-center {
+    display: flex;
+    gap: $spacing;
+    padding: $spacing;
+
+    .welcome-img {
+      width: 50%;
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .welcome-info {
+      width: 50%;
+
+      .welcome-text {
+        margin-bottom: $spacing;
+
+        h2 {
+          font-size: 2rem;
+          color: $primary-color;
+        }
+      }
+
+      .welcomeinfo {
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  @include media(md) {
+    .welcome-center {
+      flex-direction: column;
+    }
+
+    .welcome-img,
+    .welcome-info {
+      width: 100%;
+    }
+  }
+}

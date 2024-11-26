@@ -1,0 +1,50 @@
+.footer {
+  background-color: $primary-color;
+  color: white;
+  padding: $spacing;
+
+  .footer-center {
+    text-align: center;
+
+    .footer-link {
+      display: flex;
+      justify-content: center;
+      gap: $spacing;
+
+      .nav-links {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      gap: $spacing;
+
+      .social-icons {
+        color: white;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .footer-info {
+      margin-top: $spacing;
+      font-size: 0.9rem;
+    }
+  }
+
+  @include media(md) {
+    .footer-link {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}

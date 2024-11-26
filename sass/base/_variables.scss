@@ -1,0 +1,44 @@
+// common colors
+$color-primary: #678e3e;
+$primary-light: #beed8c;
+
+$clr-grey-1: #3f72a1;
+$clr-grey-5: #671d98;
+$clr-grey-10: #f1f5f8;
+$light-grey-3: #617d98;
+
+$black: #000;
+$light-black: #00000094;
+
+$white: #fff;
+$clr-red: rgb(219, 25, 25);
+
+$light-shadow: rgba(0, 0, 0, 0.1);
+$dark-shadow: rgba(0, 0, 0, 0.22);
+$logo-boxShadow: 0 0 5px rgba(0, 0, 0, 0.32);
+
+// hover colors
+$hover-color: hsl(43, 61%, 16%);
+$hoverBackground-color: hsl(43, 90%, 88%);
+
+$common-color: hsl(209, 79%, 55%);
+$background-color: hsl(45, 100%, 95%);
+//  navigation
+$navText-color: #513c06;
+$navBackground-color: #e9b949;
+$nav--padding: 6px 12px;
+
+// Font Family
+$heading-fontFamily: "Roboto", sans-serif;
+$paragraph-fontFamily: "Noto sans", sans-serif;
+$nav-fontFamily: "open sans", sans-serif;
+
+$border-radius: 0.5rem;
+$spacing: 0.25rem;
+$fontSize: 0.875rem;
+
+$transition: all 0.3s linear;
+
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1200px;

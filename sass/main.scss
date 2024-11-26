@@ -1,21 +1,13 @@
-//💥importing my sass
-@import './base';
-@import './book';
-@import './contact';
-@import './footer';
-@import './gallery';
-@import './Home';
-@import './navBar';
-@import './package';
-@import './subpackage';
-@import './welcome';
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/global';
 
-//💥importing bootstrap
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-$theme-colors-add: (
-  "common": #328fe7,
-  "commonBg": #efe6c8,
-);
-$theme-colors: map-merge($theme-colors-add, $theme-colors);
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import 'components/header';
+// @import 'components/sidebar';
+// @import 'components/home';
+// @import 'components/welcome';
+// @import 'components/packages';
+// @import 'components/contact';
+// @import 'components/gallery';
+// @import 'components/footer';
