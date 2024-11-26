@@ -1,6 +1,6 @@
 .header {
   background-color: $background-color;
-  background-color:blue;
+
   height: 5rem;
   .nav-fixed {
     padding: $spacing;
@@ -40,10 +40,11 @@
   }
   .nav-btn {
     display: none; // hide on large screen
-    color: #c31d1d;
+    color: #ff0505;
     background-color: transparent;
     border-color: transparent;
-    font-size: 2.5rem;
+    font-size: 3.1rem;
+    font-weight: bolder;
     cursor: pointer;
     &:hover {
       color: #c83838c4;
@@ -51,8 +52,8 @@
     &:active {
       transform: scale(0.9);
     }
-  }
 
+  }
   @include media(md) {
     .links,
     .global-icons {

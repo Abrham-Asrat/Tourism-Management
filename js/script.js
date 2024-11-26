@@ -3,7 +3,6 @@ const navBtn = document.getElementById("nav-btn");
 const closeBtn = document.getElementById("close-btn");
 const sidebar = document.getElementById("sidebar");
 const nav_fixed = document.querySelector(".header");
-
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
