@@ -1,5 +1,5 @@
 .home-section {
-  min-height: calc(100vh - 5rem);
+  height: calc(100vh - 5rem);
   z-index: -5;
   -webkit-clip-path: polygon(
     50% 0%,
@@ -11,128 +11,149 @@
   );
   clip-path: polygon(49% 0, 100% 3%, 100% 94%, 50% 100%, 0 94%, 0 4%);
 }
-  .home-center {
-    position: relative;
-    z-index: 3;
+.home-center {
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  // background-color: red;
+  display: grid;
+  align-items: center;
+}
+.home-text {
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  transition: $transition;
+  letter-spacing: 0.34rem;
+  font-family: $heading-fontFamily;
+  column-gap: 2rem;
+}
+.home-title1 {
+  color: $white;
+  animation: slide-left 0.65s linear 1;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+.home-title2 {
+  font-weight: bolder;
+  color: $clr-red;
+  font-size: 4.7rem;
+  animation: slide-right 0.65s linear 1;
+}
+.home-btn {
+  margin-top: 4%;
+  padding: 0.75rem;
+  outline: 0.038rem solid $navBackground-color;
+  outline-offset: 0.25rem;
+  color: var(--white);
+  border-radius: $border-radius;
+  animation: btn-show 1s linear 1;
+  background-color: transparent;
+  &:hover {
+    background-color: $navBackground-color;
+    color: #fff;
   }
-  .home-text {
-    display: grid;
-    place-items: center;
-    text-transform: uppercase;
-    transition: $transition;
-    letter-spacing: 0.34rem;
-    font-family: $heading-fontFamily;
-    padding-top: 7%;
-    column-gap: 2rem;
-  }
-    .home-title1 {
-      color: $white;
-      animation: slide-left 0.65s linear 1;
-      font-size: 4rem;
-      font-weight: lighter;
-    }
-    .home-title2 {
-      font-weight: bolder;
-      color: $clr-red;
-      font-size: 4.7rem;
-      animation: slide-right 0.65s linear 1;
-    }
-    .home-btn {
-      margin-top:4%;
-      padding: 0.75rem;
-      outline: 0.238rem solid $navBackground-color;
-      outline-offset: 0.25rem;
-      color: var(--white);
-      border-radius: $border-radius;
-      animation: btn-show 1s linear 1;
-      background-color: transparent;
-      &:hover {
-        background-color: $navBackground-color;
-        color: #fff;
-      }
-    }
-  
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
-  .overlays {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.664));
-    z-index: -1;
-  }
+}
 
-  /* animation */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.overlays {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.664));
+  z-index: -1;
+}
 
-  @keyframes slide-right {
-    0% {
-      transform: translateX(-50%);
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-left {
-    0% {
-      transform: translateX(50%);
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-  }
+/* animation */
 
-  @keyframes btn-show {
-    0% {
-      transform: scale(1);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1.28);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.5;
   }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 
-  @include media(md) {
-    .home-text{
-      padding-top:17%;
-    }
-    .home-btn {
-      font-size: 0.7rem;
-      padding: 0.25rem;
-    }
-    .home-title2 {
-      font-size: 3rem;
-    }
-    .home-title1 {
-      font-size: 2.85rem;
-    }
+@keyframes btn-show {
+  0% {
+    transform: scale(1);
+    opacity: 0;
   }
-  @include media(sm) {
-    .home-text{
-      padding-top:10%;
-    }
-    .home-title2 {
-      font-size: 2rem;
-    }
-    .home-title1 {
-      font-size: 1.85rem;
-    }
+  50% {
+    transform: scale(1.28);
   }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
+@include media(lg) {
+  .home-section {
+    height: 65vh;
+  }
+  .home-title2 {
+    font-size: 4rem;
+  }
+  .home-title1 {
+    font-size: 3.5rem;
+  }
+}
+@include media(md) {
+  .home-section {
+    height: 50vh;
+  }
+  .home-title2 {
+    font-size: 3rem;
+  }
+  .home-title1 {
+    font-size: 2.65rem;
+  }
+  .home-btn {
+    margin-top: 2%;
+    padding: 0.35rem;
+  }
+  .home-btn {
+    font-size:1rem;
+    padding: 0.35rem;
+  }
+}
+@include media(sm) {
+  .home-section {
+    height: 40vh;
+  }
+  .home-title2 {
+    font-size: 2rem;
+  }
+  .home-title1 {
+    font-size: 1.85rem;
+  }
+  .home-btn {
+    font-size:0.75rem;
+    padding: 0.35rem;
+  }
+}

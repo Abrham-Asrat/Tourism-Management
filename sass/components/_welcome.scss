@@ -1,45 +1,81 @@
-.Welcome {
+
+.welcome-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+.welcome-img-cont {
+  border: 0.25rem solid transparent;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.welcome-info {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $primary-light;
+  border-radius: 1rem;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    60% 75%,
+    0% 75%
+  );
+}
+.welcome-text {
+  @include flex-center;
+  flex-direction: column;
+}
+.welcome-2 {
+  color: $clr-grey-5;
+  font-size: 2rem;
+  font-weight: bolder;
+  justify-self: start;
+  width: 100%;
+}
+.welcome-1 {
+  font-size: 3rem;
+  font-family: "Grand Hotel", sans-serif;
+  color: $clr-red;
+}
+.welcome-info-p {
+  color: $light-black;
+  font-size: $fontSize;
+  padding: 1rem 1rem 4rem 1rem;
+  padding-bottom: 5rem;
+}
+.welcome-picture {
+  transition: $transition;
+  height: 20rem;
+}
+.welcome-img-cont:hover .welcome-picture {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+
+@include media(md) {
   .welcome-center {
-    display: flex;
-    gap: $spacing;
-    padding: $spacing;
-
-    .welcome-img {
-      width: 50%;
-
-      img {
-        width: 100%;
-        border-radius: 5px;
-      }
-    }
-
-    .welcome-info {
-      width: 50%;
-
-      .welcome-text {
-        margin-bottom: $spacing;
-
-        h2 {
-          font-size: 2rem;
-          color: $primary-color;
-        }
-      }
-
-      .welcomeinfo {
-        font-size: 1rem;
-        line-height: 1.8;
-      }
-    }
+    grid-template-columns: 1fr;
   }
-
-  @include media(md) {
-    .welcome-center {
-      flex-direction: column;
-    }
-
-    .welcome-img,
-    .welcome-info {
-      width: 100%;
-    }
+  .welcome-2 {
+    font-size: 1rem;
+  }
+  .welcome-1 {
+    font-size: 2rem;
+  }
+  .welcome-info-p {
+    padding-bottom: 5rem;
   }
 }

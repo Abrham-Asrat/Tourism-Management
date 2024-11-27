@@ -1,12 +1,12 @@
-.header {
-  background-color: $background-color;
-
-  height: 5rem;
+  .header{
+    height: 5rem;
+  }
   .nav-fixed {
+    background-color: $background-color;
+    width: 100%;
     padding: $spacing;
     display: flex;
     justify-content: center;
-    height: 100%;
     .nav-center {
       @include flex-center;
       justify-content: space-between;
@@ -28,6 +28,11 @@
         }
       }
     }
+  }
+  .navbar-fixed {
+   box-shadow: $logo-boxShadow;
+      position:fixed;
+      z-index: 10;
   }
 
   .nav-link {
@@ -52,8 +57,8 @@
     &:active {
       transform: scale(0.9);
     }
-
   }
+
   @include media(md) {
     .links,
     .global-icons {
@@ -64,4 +69,4 @@
       display: block; // Show hamburger button
     }
   }
-}
+
