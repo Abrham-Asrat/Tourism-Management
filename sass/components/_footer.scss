@@ -1,50 +1,57 @@
 .footer {
-  background-color: $primary-color;
-  color: white;
-  padding: $spacing;
-
-  .footer-center {
-    text-align: center;
-
-    .footer-link {
-      display: flex;
-      justify-content: center;
-      gap: $spacing;
-
-      .nav-links {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          color: $secondary-color;
-        }
-      }
-    }
-
-    .footer-icons {
-      display: flex;
-      justify-content: center;
-      gap: $spacing;
-
-      .social-icons {
-        color: white;
-
-        &:hover {
-          color: $secondary-color;
-        }
-      }
-    }
-
-    .footer-info {
-      margin-top: $spacing;
-      font-size: 0.9rem;
-    }
+  min-height: 35vh;
+  background: #102a42;
+}
+.footer-center{
+  display: grid;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+   justify-content:space-around;
+}
+.footer-link {
+   color:$clr-grey-1;
+  font-size:2rem;
+  transition: $transition;
+  &:hover {
+    color: $navBackground-color !important;
   }
-
-  @include media(md) {
-    .footer-link {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
+}
+.footer-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-icon {
+   color:$clr-grey-1;
+   font-size: 2rem;
+   transition: $transition;
+  &:hover {
+    color: $navBackground-color !important;
   }
+}
+
+.footer-info {
+  display:grid;
+   grid-template-columns: 1fr 1fr;
+}
+.footer-text{
+  color: $light-grey-3;
+  font-size: 1.3rem;
+}
+@include media(md){
+  .footer-link {
+    font-size: 1rem;
+  }
+  .footer-icon {
+   font-size: 1.3rem;
+  }
+  .footer-info {
+  grid-template-columns: 1fr;
+}
+  .footer-text{
+  font-size: 0.67rem;
+}
 }

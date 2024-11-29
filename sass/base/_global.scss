@@ -78,15 +78,17 @@ ul {
   margin-right: auto;
 }
 
+
 .global-icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
    column-gap: 1rem;
   justify-items:center;
+  align-items: center;
 }
 .social-icon {
   color: $light-black;
-  font-size:1.3rem;
+  // font-size:1.3rem;
   transition: $transition;
   &:hover {
     color: $navBackground-color !important;

@@ -1,6 +1,6 @@
-
 .welcome-center {
   display: grid;
+  max-width: 1300px;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 }
@@ -33,6 +33,7 @@
     60% 75%,
     0% 75%
   );
+  max-height: 35rem;
 }
 .welcome-text {
   @include flex-center;
@@ -55,6 +56,7 @@
   font-size: $fontSize;
   padding: 1rem 1rem 4rem 1rem;
   padding-bottom: 5rem;
+  font-size: 1.3rem;
 }
 .welcome-picture {
   transition: $transition;
@@ -64,18 +66,27 @@
   opacity: 0.6;
   transform: scale(1.2);
 }
-
-@include media(md) {
+@include media(lg){
+    .welcome-info-p {
+    padding-bottom: 5rem;
+    font-size: 1rem;
+  }
+}
+@include media(md){
+  .welcome-img {
+    display: none;
+  }
   .welcome-center {
     grid-template-columns: 1fr;
   }
   .welcome-2 {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .welcome-1 {
     font-size: 2rem;
   }
   .welcome-info-p {
     padding-bottom: 5rem;
+    font-size: 1rem;
   }
 }

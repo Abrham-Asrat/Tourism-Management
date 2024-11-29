@@ -1,5 +1,8 @@
+.homesection{
+  background-color: hsl(46, 54%, 86%);
+}
 .home-section {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 7rem);
   z-index: -5;
   -webkit-clip-path: polygon(
     50% 0%,
@@ -12,40 +15,38 @@
   clip-path: polygon(49% 0, 100% 3%, 100% 94%, 50% 100%, 0 94%, 0 4%);
 }
 .home-center {
-  height: 100%;
   position: relative;
   z-index: 3;
-  // background-color: red;
   display: grid;
   align-items: center;
+  height: 100%;
 }
 .home-text {
-  display: grid;
-  place-items: center;
+  text-align: center;
   text-transform: uppercase;
   transition: $transition;
   letter-spacing: 0.34rem;
   font-family: $heading-fontFamily;
   column-gap: 2rem;
+ 
 }
 .home-title1 {
   color: $white;
   animation: slide-left 0.65s linear 1;
-  font-size: 4rem;
-  font-weight: lighter;
+  font-size: 6rem;
 }
 .home-title2 {
   font-weight: bolder;
   color: $clr-red;
-  font-size: 4.7rem;
+  font-size: 5.7rem;
   animation: slide-right 0.65s linear 1;
 }
 .home-btn {
-  margin-top: 4%;
-  padding: 0.75rem;
+  padding: .85rem;
   outline: 0.038rem solid $navBackground-color;
   outline-offset: 0.25rem;
-  color: var(--white);
+  color:$clr-grey-1;
+  
   border-radius: $border-radius;
   animation: btn-show 1s linear 1;
   background-color: transparent;
@@ -79,21 +80,21 @@
 
 @keyframes slide-right {
   0% {
-    transform: translateX(-50%);
+    transform: translateY(-200%);
     opacity: 0.5;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
 @keyframes slide-left {
   0% {
-    transform: translateX(50%);
+    transform: translateY(200%);
     opacity: 0.5;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
@@ -121,6 +122,10 @@
   }
   .home-title1 {
     font-size: 3.5rem;
+  }
+  .home-btn {
+    font-size:0.75rem;
+    padding: 0.35rem;
   }
 }
 @include media(md) {

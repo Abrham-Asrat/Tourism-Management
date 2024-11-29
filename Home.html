@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- nav bar -->
-    <header class="header" id="home">
+    <header class="header " id="home">
       <nav class="nav-fixed" id="navBtn">
         <div class="section-center nav-center">
           <div class="logo">
@@ -40,37 +40,33 @@
           <button class="nav-btn" id="nav-btn">
             <i class="bi bi-list"></i>
           </button>
-          <ul class="global-icons">
-            <li><a href="#home" class="social-icon">Home</a></li>
-            <li><a href="#package" class="social-icon">Packages</a></li>
+          <ul class="global-icons global-header">
+            <li><a href="#home" class="social-icon headerText">Home</a></li>
+            <li><a href="#package" class="social-icon headerText">Packages</a></li>
             <li>
-              <a href="bookform.html" class="booklink social-icon">Book</a>
+              <a href="bookform.html" class="booklink social-icon headerText">Book</a>
             </li>
           </ul>
           <!-- icons -->
           <ul class="global-icons">
             <li>
-             <a class="nav-link social-icon" href="www.facebook.com">
+             <a class="nav-link social-icon header-icon" href="www.facebook.com">
               <i class="bi bi-facebook"></i>
             </a>
-            </li>
-            
-            
-            
-            
+            </li>    
             <li>
-              <a class="nav-link social-icon" href="www.whatsapp.com">
+              <a class="nav-link social-icon header-icon" href="www.whatsapp.com">
               <i class="bi bi-whatsapp"></i>
             </a>
             </li>
 
             <li>
-              <a class="nav-link social-icon" href="www.instagram">
+              <a class="nav-link social-icon header-icon" href="www.instagram">
                  <i class="bi bi-instagram"></i>
               </a>
             </li>
             <li>
-             <a class="nav-link social-icon" href="www.youtube.com">
+             <a class="nav-link social-icon header-icon" href="www.youtube.com">
               <i class="bi bi-youtube"></i>
              </a>
             </li>
@@ -91,20 +87,30 @@
               <a href="bookform.html" class="sidebar-link booklink">Book</a>
             </li>
           </ul>
-          <nav class="nav">
-            <a class="nav-link social-icon" href="www.facebook.com">
+          <!-- icons -->
+          <ul class="side-icons">
+            <li>
+             <a class="nav-link social-icon side-link" href="www.facebook.com">
               <i class="bi bi-facebook"></i>
             </a>
-            <a class="nav-link social-icon" href="www.whatsapp.com">
+            </li>    
+            <li>
+              <a class="nav-link social-icon side-link" href="www.whatsapp.com">
               <i class="bi bi-whatsapp"></i>
             </a>
-            <a class="nav-link social-icon" href="www.instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a class="nav-link social-icon" href="www.youtube.com">
+            </li>
+
+            <li>
+              <a class="nav-link social-icon side-link" href="www.instagram">
+                 <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+             <a class="nav-link social-icon side-link" href="www.youtube.com">
               <i class="bi bi-youtube"></i>
-            </a>
-          </nav>
+             </a>
+            </li>
+          </ul>
         </div>
       </aside>
     </header>
@@ -119,7 +125,7 @@
             <div class="home-text">
               <h1 class="home-title1">Travel Around</h1>
               <h1 class="home-title2">ኢትዮጵያ</h1>
-              <button type="button"  <a href="#gallery" class="btn home-btn">Gallery</a>
+              <a href="#gallery" class="btn home-btn">Gallery</a>
             </div>
           </div>
         </div>
@@ -139,9 +145,9 @@
     </section>
     <!--end of Home section -->
  <!-- our Service -->
-    <section class="section Welcome">
+    <section class="section">
           <div class="section-center welcome-center">
-              <article class="welcome-img d-none d-md-block">
+              <article class="welcome-img">
                 <div class="welcome-img-cont">
                  <img src="images/home/home7.jpeg" alt="welcome-picture" class="welcome-picture">
                 </div>
@@ -149,9 +155,9 @@
               <div class="welcome-info">        
                    <div class="welcome-text">
                      <h2 class="welcome-1">Welcome to Ethiopia</h2>
-                     <h3 class="welcome-2 ps-3">land of origin</h3> 
+                     <h3 class="welcome-2">land of origin</h3> 
                     </div>
-                    <p class="welcome-info-p">
+                    <p class="welcome-info-p lead">
                       Ethiopia's contributions to various fields, from early human evolution and ancient civilizations to unique cultural practices and diverse natural wonders. It's a land where many things seem to have originated, leaving a significant mark on history and the world.
                     </p>
               </div>
@@ -166,61 +172,345 @@
           <div class="underline"></div>
           </div>
          <article class="package-card container-lg">
+        
            <!-- single card -->
-            <!-- <div class="single-card">   
-                <div class="card-front cardSide">
-                    <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
-                    <div class="CardInfo">
-                        <h3 class="cardTitile">GondarTana package</h3>
-                         <p class="card-info">
-                          welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
-                         </p>
-                        <div class="card-change">
-                            <h2>10days</h2>
-                            <h2>$990</h2>
-                        </div>
-                        <div class="icon-card">
-                               
-                        </div>
-                     
-                     </div>
-
-                </div>
-                 <div class="card-back cardSide">
-                  <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
-                 </div>
-             </div> -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
             <!--end of single card -->
            <!-- single card -->
-            <!-- <div class="single-card">
-               
-                <div class="card-front cardSide">
-                    <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
-                    <div class="CardInfo">
-                        <h3 class="cardTitile">GondarTana package</h3>
-                         <p class="card-info">
-                          welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
-                         </p>
-                        <div class="card-change">
-                            <h2>10days</h2>
-                            <h2>$990</h2>
-                        </div>
-                        <div class="icon-card">
-                               
-                        </div>
-                     
-                     </div>
-
-                    </div>
-                 <div class="card-back cardSide">
-                  <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
-                 </div>
-             </div> -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
             <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+           <!-- single card -->
+        <div class="single-card">
+          <div class="card-front cardSide">
+            <img src="images/Gonder/gonderCard.jpeg" alt="image not found" class="imageCard">
+            <div class="CardInfo">
+              <h3 class="cardTitle">GondarTana package</h3>
+              <p class="card-info">
+                welcome to Gondar Tana package have 5 sub-packages inside if you wanna visit you are in right position we are your TravelConcierge click show more button fo detail info..
+              </p>
+              <div class="card-change">
+                <h2>10days</h2>
+                <h2>$990</h2>
+              </div>
+              <div class="icon-card">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-back cardSide">
+            <a href="./Packages/gonderBahrDar.html" class="btn">show more</a>
+          </div>
+        </div> 
+            <!--end of single card -->
+
+      
          </article>
         </div> 
     </section>
     <!--end of packages -->
+
+      <!-- contact -->
+         <section class="section contact"   id="gallery">
+            <div class="section-center contact-center">
+                <!-- contact title -->
+                <article class="contact-title">
+                    <h3>want latest trip info and updates?</h3>
+                    <p>sign up for newsletter and stay up to date</p>
+                </article>
+                <!-- contct form -->
+                <form class="contact-form" autocomplete="on" action="book.php" method="post">
+                    <input type="email" name="email" class="form-control" required placeholder="your email">
+                    <button type="submit" class="btn-submit btn" name="notify">submit</button>
+                </form>
+            </div>
+         </section>
+      <!-- end of contact -->
+ 
+     <!-- gallery center -->
+      <section>
+        <div class="gallery-center" id="gallery">
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/trip1.jpeg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/trip2.jpg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/Trip3.jpeg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/Trip4.jpg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="bi bi-search-heart"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/tri5.JPG" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/Trip6.jpeg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+         
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/Trip8.jpg" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="gallery-img-container">
+                <img src="images/Trip/trip11.JPG" alt="" class="gallery-img">
+                <a href="#home" class="gallery-icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </article>
+            <!-- end of single item -->
+            
+        </div>
+      </section>
+      <!-- end of Gallery -->
+     
+      <!-- footer -->
+      <footer class="section footer">
+        <div class="footer-center container-lg">
+           <!-- footer links -->              
+          <ul class="footer-links">
+            <li>
+             <a class="footer-link" href="#home">
+               Home
+            </a>
+            </li>    
+            <li>
+              <a class="footer-link" href="#package">
+                packages
+            </a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="bookform.html">
+                 book
+              </a>
+            </li>
+        
+          </ul>
+               <!-- end footer links -->
+                <!-- icons -->
+          <ul class="footer-icons">
+            <li>
+             <a class="footer-icon" href="www.facebook.com">
+              <i class="bi bi-facebook"></i>
+            </a>
+            </li>    
+            <li>
+              <a class="footer-icon" href="www.whatsapp.com">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            </li>
+
+            <li>
+              <a class="footer-icon" href="www.instagram">
+                 <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+             <a class="footer-icon" href="www.youtube.com">
+              <i class="bi bi-youtube"></i>
+             </a>
+            </li>
+          </ul>
+        <!-- end of icons -->
+         <div class="footer-info">
+          <h2 class="display-6 footer-text">copy &copy;2024 All Right Reserved, </h2>
+          <h2 class="display-5 footer-text">Travel Tour Company </h2>
+         </div>
+  
+         
+        </div>
+      </footer>
     <!-- link for javaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
