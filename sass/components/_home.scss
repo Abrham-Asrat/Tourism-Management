@@ -115,7 +115,7 @@
 
 @include media(md) {
   .home-section {
-    height: 50vh;
+    height: 65vh;
   }
   .home-title2 {
     font-size: 3rem;
@@ -134,7 +134,7 @@
 }
 @include media(sm) {
   .home-section {
-    height: 40vh;
+    height: 55vh;
   }
   .home-title2 {
     font-size: 2rem;

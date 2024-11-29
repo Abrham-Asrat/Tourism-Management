@@ -39,12 +39,11 @@
   cursor: pointer;
   padding: 1rem 2rem;
   margin-left: -2rem;
-}
-
-.sidebar-link:hover {
+  &:hover {
   background-color: #2caeba;
   transform: translateX(4px);
   padding-left: 2.35rem;
+}
 }
 .side-icons{
   display:flex;
@@ -54,5 +53,7 @@
   color: $light-black;
 }
 .side-link{
-  padding-right:0.5rem;
+  // padding-right:0.5rem;
+  font-size:1rem;
+  color: $light-black;
 }
